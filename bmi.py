@@ -3,6 +3,7 @@
 # This program calculates a persons BMI by calculating their weight (KG) divided by their height (M) squared
 # Reference: https://stackoverflow.com/questions/20405610/bmi-calculator-in-python/20405792#:~:text=')%20while%20input%20%3D%3D%20'imperial,which%20means%20you%20are%20underweight.
 # Reference: https://stackoverflow.com/questions/35520965/how-do-i-let-the-user-input-enter-a-decimal-number-as-well-as-just-an-integer/35521117
+# Reference: https://www.w3schools.com/python/python_string_formatting.asp
 
 weight = int(input('Enter Weight in KG: '))
 height = float(input('Enter Height in Meters: '))
