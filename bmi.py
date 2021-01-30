@@ -11,6 +11,7 @@ height = float(input('Enter Height in Meters: '))
 
 result = weight/(height*height)
 
-print ('Your BMI is: {}'.format(result))
+print ('Your BMI is: {:.2f}'.format(result))
 # This took quite a bit of de-bugging as I had to figure out how to be able to add both text and the result to the same line
 # Before I tried {}.format I was getting errors
+# Adding :.2f within curley braces rounds to two decimal places
