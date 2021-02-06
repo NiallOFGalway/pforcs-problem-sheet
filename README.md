@@ -19,6 +19,9 @@ print ('Your BMI is: {:.2f}'.format(result))
 **INPUT:** I had to research to use FLOAT rather than INT when inputting height, as height is calculated in meters and to use a decimal you must use FLOAT
 (int only works with whole numbers)
 
-**PRINT:** I had to research how I could print both a text result and also the output of the calculation.
-This was done using {}.format which was covered in lecture videos
+**PRINT:** I had to research how I could print both a text result and also the output of the calculation. This was done using {}.format which was covered in lecture videos
+
+**PRINT:** Originally, the output produced several digits after the decimal place. Usually, BMI is produced to 2 decimal places (ie. 24.65). To reduce the output result to 2 decimal places, :.2f was placed within the curly braces.
+
+
 Reference URL's pasted within bmi.py
