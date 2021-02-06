@@ -34,3 +34,14 @@ Stack Overflow "How do I let the user input a decimal number aswell as an intege
 W3 Schools "Python String Formatting" - https://www.w3schools.com/python/python_string_formatting.asp
 
 Slack Chat Forums - Discussion with classmates
+
+
+
+
+#TOPIC 03 - bitcoin.py - Bitcoin price in US$
+*Write a program that prints out todays bitcoin price in dollars.*
+
+Code:
+```
+
+```
