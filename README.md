@@ -4,6 +4,7 @@
 # Outline
 This README is used to add notes / comments regarding weeklky tasks for "Programming for CyberSecurity"
 Most of the info here will be duplicate of comments within each .py
+Reference for formatting: https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 
 # WEEK02 - bmi.py - BMI Calculator
 *Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and weight in kilograms. The output  is their weight divided by their height in metres squared.*
@@ -22,6 +23,7 @@ print ('Your BMI is: {:.2f}'.format(result))
 **PRINT:** I had to research how I could print both a text result and also the output of the calculation. This was done using {}.format which was covered in lecture videos
 
 **PRINT:** Originally, the output produced several digits after the decimal place. Usually, BMI is produced to 2 decimal places (ie. 24.65). To reduce the output result to 2 decimal places, :.2f was placed within the curly braces.
+
 
 **REFERENCES**
 
