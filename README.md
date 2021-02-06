@@ -1,11 +1,11 @@
-#Programming & Security - Problem Sheet
-##Niall O Flaherty - G00398819
+# Programming & Security - Problem Sheet
+## Niall O Flaherty - G00398819
 
-#Outline
+# Outline
 This README is used to add notes / comments regarding weeklky tasks for "Programming for CyberSecurity"
 Most of the info here will be duplicate of comments within each .py
 
-#WEEK02 - bmi.py - BMI Calculator
+# WEEK02 - bmi.py - BMI Calculator
 *Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and weight in kilograms. The output  is their weight divided by their height in metres squared.*
 
 Code:
