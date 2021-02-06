@@ -2,8 +2,8 @@
 ## Niall O Flaherty - G00398819
 
 # Outline
-This README is used to add notes / comments regarding weeklky tasks for "Programming for CyberSecurity"
-Most of the info here will be duplicate of comments within each .py
+This README is used to add notes / comments regarding weeklky tasks for "Programming for CyberSecurity". Most of the info here will be duplicate of comments within each .py.
+
 Reference for formatting: https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 
 # WEEK02 - bmi.py - BMI Calculator
