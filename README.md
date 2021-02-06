@@ -6,7 +6,7 @@ This README is used to add notes / comments regarding weeklky tasks for "Program
 
 Reference for formatting: https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 
-# WEEK02 - bmi.py - BMI Calculator
+# TOPIC 02 - bmi.py - BMI Calculator
 *Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and weight in kilograms. The output  is their weight divided by their height in metres squared.*
 
 Code:
