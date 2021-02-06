@@ -24,6 +24,7 @@ print ('Your BMI is: {:.2f}'.format(result))
 **PRINT:** Originally, the output produced several digits after the decimal place. Usually, BMI is produced to 2 decimal places (ie. 24.65). To reduce the output result to 2 decimal places, :.2f was placed within the curly braces.
 
 **REFERENCES**
+
 Stack Overflow "BMI Calculator in Python" - https://stackoverflow.com/questions/20405610/bmi-calculator-in-python/20405792#:~:text=')%20while%20input%20%3D%3D%20'imperial,which%20means%20you%20are%20underweight.
 
 Stack Overflow "How do I let the user input a decimal number aswell as an integer?" - https://stackoverflow.com/questions/35520965/how-do-i-let-the-user-input-enter-a-decimal-number-as-well-as-just-an-integer/35521117
