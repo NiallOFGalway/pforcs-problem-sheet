@@ -43,7 +43,7 @@ Slack Chat Forums - Discussion with classmates
 # TOPIC 03 - bitcoin.py - Bitcoin price in US$
 *Write a program that prints out todays bitcoin price in dollars.*
 
-Install Requests
+Install Requests - Execute the below code within VS Code Terminal to allow requests
 ```
 pip install requests
 ```
