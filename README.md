@@ -50,9 +50,20 @@ pip install requests
 
 Code:
 ```
+import requests
+url = "https://api.coindesk.com/v1/bpi/currentprice.json"
 
+returnedData = requests.get(url)
+
+print("Todays Bitcoin price in USD\t" + returnedData.json()['bpi']['USD']['rate'])
+print("Todays Bitcoin price in EUR\t" + returnedData.json()['bpi']['EUR']['rate'])
+print("Todays Bitcoin price in GBP\t" + returnedData.json()['bpi']['GBP']['rate'])
 ```
 
 **REFERENCES**
 
 "Working With JSON Data in Python" - https://realpython.com/python-json/
+"Python Project for Beginners: Bitcoin Price Notifications" - https://realpython.com/python-bitcoin-ifttt/
+"Python for Loops" - https://www.w3schools.com/python/python_for_loops.asp
+"Bitcoin Price Python" - https://github.com/hanumancode/Bitcoin-Price-Python
+API - https://www.coindesk.com/coindesk-api
