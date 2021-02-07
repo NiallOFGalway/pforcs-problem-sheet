@@ -64,7 +64,11 @@ It took quite some time by trial-and-error to learn what I actually needed to pu
 **REFERENCES**
 
 "Working With JSON Data in Python" - https://realpython.com/python-json/
+
 "Python Project for Beginners: Bitcoin Price Notifications" - https://realpython.com/python-bitcoin-ifttt/
+
 "Python for Loops" - https://www.w3schools.com/python/python_for_loops.asp
+
 "Bitcoin Price Python" - https://github.com/hanumancode/Bitcoin-Price-Python
+
 API - https://www.coindesk.com/coindesk-api
