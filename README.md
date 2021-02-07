@@ -2,7 +2,9 @@
 ## Niall O Flaherty - G00398819
 
 # Outline
-This README is used to add notes / comments regarding weeklky tasks for "Programming for CyberSecurity". Most of the info here will be duplicate of comments within each .py.
+This README is used to add notes / comments regarding weeklky tasks for "Programming for CyberSecurity". Most of the info here will be duplicate of comments within
+each .py. While some may consider this README containing too much information, as a beginner to Python I am purposely over-commenting for my own benefit for 
+future reference
 
 Reference for formatting: https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 
