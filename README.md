@@ -59,6 +59,7 @@ print("Todays Bitcoin price in USD\t" + returnedData.json()['bpi']['USD']['rate'
 print("Todays Bitcoin price in EUR\t" + returnedData.json()['bpi']['EUR']['rate'])
 print("Todays Bitcoin price in GBP\t" + returnedData.json()['bpi']['GBP']['rate'])
 ```
+It took quite some time by trial-and-error to learn what I actually needed to pull from the .json to provide me with the data I wanted. I knew that the currency abbreviations and the rate were was the key data, but I kept getting errors when I executed the .py. After searching online (see references below), I noted that one user included the 'bpi' field (Bitcoin Price Index). I was un-sure as to why including this field was crucial, however after adding it, the output was correct.
 
 **REFERENCES**
 
