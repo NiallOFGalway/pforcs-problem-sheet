@@ -22,3 +22,4 @@ def thenumber(number):
 # Otherwise, return the number, multiply by 3 and add 1
 
 thenumber(number)
+# Execute the definition above
