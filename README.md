@@ -72,3 +72,55 @@ It took quite some time by trial-and-error to learn what I actually needed to pu
 "Bitcoin Price Python" - https://github.com/hanumancode/Bitcoin-Price-Python
 
 API - https://www.coindesk.com/coindesk-api
+
+
+
+
+# TOPIC 04 - collatz.py - Bitcoin price in US$
+*Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
+At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
+Have the program end if the current value is 1.*
+
+Code:
+```
+while True:
+    try:
+        integer = int(input("Please enter a positive number: "))
+  
+    except ValueError:
+        print ("Hey, that's not a number! Please try again: ")
+        continue
+
+    else: 
+        if integer <1:
+            print("You entered either 0, or a negative number. Please try again: ")
+            continue
+        break
+
+def number(integer):
+    if integer % 2 == 0:
+        return (integer / 2)  
+    else: 
+        return ((integer * 3) + 1)    
+
+if integer > 0:
+    while integer != 1:
+        print(integer)
+        integer = number(integer)
+```
+
+
+**REFERENCES**
+https://stackoverflow.com/questions/33508034/making-a-collatz-program-automate-the-boring-stuff
+
+Andrew Beatty e-mail query
+
+https://en.wikibooks.org/wiki/Python_Programming/Operators
+
+https://stackoverflow.com/questions/20337489/python-how-to-keep-repeating-a-program-until-a-specific-input-is-obtained
+
+https://www.w3schools.com/python/python_try_except.asp
+
+https://www.w3schools.com/python/python_while_loops.asp
+
+https://www.w3schools.com/python/python_functions.asp
