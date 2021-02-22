@@ -8,7 +8,7 @@ future reference
 
 Reference for formatting: https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
 
-# TOPIC 02 - bmi.py - BMI Calculator
+# WEEK 02 - bmi.py - BMI Calculator
 *Write a program that calculates somebody's Body Mass Index (BMI). The inputs are the person's height in centimetres and weight in kilograms. The output  is their weight divided by their height in metres squared.*
 
 Code:
@@ -40,7 +40,7 @@ Slack Chat Forums - Discussion with classmates
 
 
 
-# TOPIC 03 - bitcoin.py - Bitcoin price in US$
+# WEEK 03 - bitcoin.py - Bitcoin price in US$
 *Write a program that prints out todays bitcoin price in dollars.*
 
 Install Requests - Execute the below code within VS Code Terminal to allow requests
@@ -76,7 +76,7 @@ API - https://www.coindesk.com/coindesk-api
 
 
 
-# TOPIC 04 - collatz.py - Bitcoin price in US$
+# WEEK 04 - collatz.py - Bitcoin price in US$
 *Write a program that asks the user to input any positive integer and outputs the successive values of the following calculation.
 At each step calculate the next value by taking the current value and, if it is even, divide it by two, but if it is odd, multiply it by three and add one.
 Have the program end if the current value is 1.*
