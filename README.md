@@ -109,8 +109,19 @@ if integer > 0:
         integer = number(integer)
 ```
 
+1) We need to define the integer, however there are rules
+    - The input must be a number
+    - The integer must be greater than 0
+    * If these rules are not met, the user must try again
+
+2) Now that we have passed the rules, we must check
+    - If the integer is even (when devided by 2, the remainder is 0), return the integer divided by 2
+    - If the integer is odd, multiply the integer by 3 and add 1
+
+3) If the integer is greater than 0 and while it is greater than 1, print the values
 
 **REFERENCES**
+
 https://stackoverflow.com/questions/33508034/making-a-collatz-program-automate-the-boring-stuff
 
 Andrew Beatty e-mail query
