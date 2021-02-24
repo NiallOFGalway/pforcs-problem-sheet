@@ -7,19 +7,38 @@
 # Reference: Andrew Beatty e-mail query
 # Reference: https://en.wikibooks.org/wiki/Python_Programming/Operators
 # Reference: https://stackoverflow.com/questions/20337489/python-how-to-keep-repeating-a-program-until-a-specific-input-is-obtained
+# Reference: https://www.w3schools.com/python/python_try_except.asp
+# Reference: https://www.w3schools.com/python/python_while_loops.asp
+# Reference: https://www.w3schools.com/python/python_functions.asp
 
-number = int(input("Enter a positive integer: "))
-# Requests the user to input a positive integer
+while True:
+    try:
+        integer = int(input("Please enter a positive number: "))
+# Asks the user to input a positive number. (try)
+  
+    except ValueError:
+        print ("Hey, that's not a number! Please try again: ")
+        continue
+# Checks that the value inputted is indeed an integer (int). Once ths is true, it will continue.
 
-def thenumber(number):
-    if number % 2 == 0:
-        (print(number // 2 ))
-# If the number divided by 2 does not have a remainder, it is even.
-# Therefore return the even number divided by 2
-    
-    else:
-        return (print(int(number * 3 +1)))
-# Otherwise, return the number, multiply by 3 and add 1
+    else: 
+        if integer <1:
+            print("You entered either 0, or a negative number. Please try again: ")
+            continue
+        break
+# Checks that the value inptted is greater than 0. Once this is true, it will continue and then breaks (break), to stop a loop.
 
-thenumber(number)
-# Execute the definition above
+def number(integer):
+    if integer % 2 == 0:
+        return (integer / 2)  
+    else: 
+        return ((integer * 3) + 1)
+# This defines what we want the output to be. If the number is even (divided by 2, no remainder, hence even), return the number divided by 2
+# Otherwise, multiple the integer by 3 and add 1      
+
+if integer > 0:
+    while integer != 1:
+        print(integer)
+        integer = number(integer)
+# If the integer is greater than 0, print the output.
+# Only do this while (while) the integer is not equal to 1. 
