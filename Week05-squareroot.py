@@ -22,5 +22,5 @@ inputNumber = float(input("Please enter a positive number: "))
 sqrt = (squareRoot(inputNumber))
 # Calling the function
 
-print("The Square Root of {} is approx. {}".format(inputNumber,sqrt))
+print("The Square Root of {} is approx. {:.2f}".format(inputNumber,sqrt))
 # Printing the result
