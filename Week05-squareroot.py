@@ -19,8 +19,8 @@ def squareRoot(number, number_iters = 1000000):
 inputNumber = float(input("Enter number you wish to be square rooted: "))
 # Asks the user to input a number
 
-SRoot = (squareRoot(inputNumber))
+sqrt = (squareRoot(inputNumber))
 # Calling the function
 
-print(SRoot)
+print(sqrt)
 # Printing the result
