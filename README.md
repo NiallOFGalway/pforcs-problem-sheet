@@ -158,3 +158,18 @@ sqrt = (squareRoot(inputNumber))
 
 print("The Square Root of {} is approx. {}".format(inputNumber,sqrt))
 ```
+
+1) Define the function using def
+2) Calculate the Square Root using Newton Method (As found in References
+3) Return the number
+4) Call the function
+5) Print the final result
+
+** REFERENCES **
+https://www.geeksforgeeks.org/python-math-function-sqrt/#:~:text=sqrt()%20function%20is%20an,number%20passed%20in%20the%20parameter.
+
+https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
+
+https://www.youtube.com/watch?v=2GrfaB88w4M
+
+https://www.youtube.com/watch?v=nDlip0Mg8tE
