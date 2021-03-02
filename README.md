@@ -166,6 +166,7 @@ print("The Square Root of {} is approx. {}".format(inputNumber,sqrt))
 5) Print the final result
 
 ** REFERENCES **
+
 https://www.geeksforgeeks.org/python-math-function-sqrt/#:~:text=sqrt()%20function%20is%20an,number%20passed%20in%20the%20parameter.
 
 https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
