@@ -135,3 +135,26 @@ https://www.w3schools.com/python/python_try_except.asp
 https://www.w3schools.com/python/python_while_loops.asp
 
 https://www.w3schools.com/python/python_functions.asp
+
+
+
+
+# Week 05 - squareroot.py - Get the Square Root of a number using Newton Method
+*Write a program that takes a positive floating-point number as input and outputs an approximation of its square root. Do not use built-in function math.sqrt(x) - Instead use Newton Method. You should create a function called <tt>sqrt</tt> that does this.*
+
+Code:
+```
+def squareRoot(number, number_iters = 1000000):
+    numberToBeRooted = (float(number))
+  
+    for i in range (number_iters):
+        number = 0.5 * (number + numberToBeRooted / number)
+    
+    return number
+
+inputNumber = float(input("Please enter a positive number: "))
+
+sqrt = (squareRoot(inputNumber))
+
+print("The Square Root of {} is approx. {}".format(inputNumber,sqrt))
+```
