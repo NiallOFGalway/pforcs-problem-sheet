@@ -16,11 +16,11 @@ def squareRoot(number, number_iters = 1000000):
 # This is the manual method of getting SqRoot of a number, rather than using built-in function    
     return number
 
-inputNumber = float(input("Enter number you wish to be square rooted: "))
+inputNumber = float(input("Please enter a positive number: "))
 # Asks the user to input a number
 
 sqrt = (squareRoot(inputNumber))
 # Calling the function
 
-print(sqrt)
+print("The Square Root of {} is approx. {}".format(inputNumber,sqrt))
 # Printing the result
