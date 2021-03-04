@@ -165,7 +165,7 @@ print("The Square Root of {} is approx. {}".format(inputNumber,sqrt))
 4) Call the function
 5) Print the final result
 
-** REFERENCES **
+**REFERENCES**
 
 https://www.geeksforgeeks.org/python-math-function-sqrt/#:~:text=sqrt()%20function%20is%20an,number%20passed%20in%20the%20parameter.
 
@@ -174,3 +174,39 @@ https://medium.com/@sddkal/newton-square-root-method-in-python-270853e9185d
 https://www.youtube.com/watch?v=2GrfaB88w4M
 
 https://www.youtube.com/watch?v=nDlip0Mg8tE
+
+
+
+# Week 06 - Week06-CountEs.py
+*Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.*
+
+Code:
+```
+filetocount = str(input("Enter TXT file to count (include extension .txt): "))
+
+
+with open (filetocount, 'r') as file:
+   
+    read = file.read()
+
+    count = read.count('e')
+
+    print(count)
+```
+
+1) Asks the user to input the filename (include .txt extension)
+2) Open the file (NOTE: 'r' means read-only)
+- NOTE: There is an older method to open file (f = open) it was advised not to use this as you must close the file (f.close()) after. Failing to do so could mean other users may not be able to close the file.
+3) Read the File
+4) Count the number of 'e' in the file
+5) Print the result
+
+**REFERENCES**
+
+https://stackoverflow.com/questions/30876497/open-a-file-from-user-input-in-python-2-7
+
+https://pythonexamples.org/python-count-number-of-words-in-text-file/
+
+Andrew Beatty Week06 Lecture Video
+
+https://pythonexamples.org/python-count-number-of-characters-in-text-file/
