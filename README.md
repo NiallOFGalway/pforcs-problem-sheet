@@ -210,3 +210,5 @@ https://pythonexamples.org/python-count-number-of-words-in-text-file/
 Andrew Beatty Week06 Lecture Video
 
 https://pythonexamples.org/python-count-number-of-characters-in-text-file/
+
+https://www.geeksforgeeks.org/python-string-count/
