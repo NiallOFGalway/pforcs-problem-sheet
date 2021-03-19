@@ -12,16 +12,30 @@
 # Reference: https://www.w3schools.com/python/python_file_handling.asp
 # Reference: https://www.w3schools.com/python/ref_file_readlines.asp
 # Reference: https://stackoverflow.com/questions/839994/extracting-a-url-in-python
+# Reference: https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
 
 import re
 # Regex module
 
+outputFileName = "Week07-OutputFile.txt"
+
 with open ('Week07-access.log', 'r') as file:
 # 'r' denotes read-only
     for line in file:
-        result = re.findall(r'(?:(get|post|head|put|delete|connect|options|trace|patch) )(\S+)', line)
+        result = re.findall('(?:(GET|POST|HEAD|PUT|DELETE|CONNECT|OPTIONS|TRACE|PATCH) )(\S+)', line)
+        print(result)
 # I tried searching for sentence beginning with / but was un-successful.
 # The alternative was to find any possibiliy of HTTP methods, of which there are 9.
-# Not case sensitive
+# CASE SENSITIVE - VS Code Crl+F is *not* case sensitive, so it took a long time to realise the reason I had no output is because Python *IS* case sensitive.
+# The above will output the results to screen.
 
-print(result)
+'''
+with open ('Week07-access.log', 'r') as file:
+    with open (outputFileName, 'w') as outputFile:
+        for line in file: 
+            result = re.findall('(?:(GET|POST|HEAD|PUT|DELETE|CONNECT|OPTIONS|TRACE|PATCH) )(\S+)', line)
+            print(result, file=open("Week07-OutputFile.txt", "a"))
+'''
+# The above commented code would output the results to OutputFile.txt in the same folder as the .py file
+# a = attribute
+
