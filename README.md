@@ -177,6 +177,7 @@ https://www.youtube.com/watch?v=nDlip0Mg8tE
 
 
 
+
 # Week 06 - Week06-CountEs.py
 *Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.*
 
@@ -212,3 +213,57 @@ Andrew Beatty Week06 Lecture Video
 https://pythonexamples.org/python-count-number-of-characters-in-text-file/
 
 https://www.geeksforgeeks.org/python-string-count/
+
+
+
+
+# WEEK07 - Week07-extract-url.py
+*Write a program called extract-url.py, that will extract the URLs from an access.log file. ie The part of the URL that is stored in the access.log file, complete with the query parameters*
+
+Code:
+```
+import re
+
+outputFileName = "Week07-OutputFile.txt"
+
+with open ('Week07-access.log', 'r') as file** REFERENCE
+    for line in file:
+        result = re.findall('(?:(GET|POST|HEAD|PUT|DELETE|CONNECT|OPTIONS|TRACE|PATCH) )(\S+)', line)
+        print(result)
+
+'''
+with open ('Week07-access.log', 'r') as file:
+    with open (outputFileName, 'w') as outputFile:
+        for line in file: 
+            result = re.findall('(?:(GET|POST|HEAD|PUT|DELETE|CONNECT|OPTIONS|TRACE|PATCH) )(\S+)', line)
+            print(result, file=open("Week07-OutputFile.txt", "a"))
+'''
+```
+
+1) Import re imports Regex (Regular Expressions)
+2) In the event of outputting the result to a separate file, define this by defining: outputFileName - NOTE: In the above code, the option to output the result is commented out. The above code outputs the result to screen
+3) Open the file (In the example above, 'Week07-access.log') - Note: 'r' denotes read-only
+4) Use re.findall (including your chosen pattern) - re.findall module is used to search for “all” occurrences that match a given pattern
+5) Print the result
+
+**REFERENCES**
+
+https://realpython.com/regex-python/
+
+https://www.w3schools.com/python/python_regex.asp
+
+https://cheatography.com/davechild/cheat-sheets/regular-expressions/
+
+Week07 Andrew Beatty Video
+
+https://stackoverflow.com/questions/20320719/constructing-regex-pattern-to-match-sentence/20320828
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+https://www.w3schools.com/python/python_file_handling.asp
+
+https://www.w3schools.com/python/ref_file_readlines.asp
+
+https://stackoverflow.com/questions/839994/extracting-a-url-in-python
+
+https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
