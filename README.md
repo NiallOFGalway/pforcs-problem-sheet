@@ -249,6 +249,7 @@ with open ('Week07-access.log', 'r') as file:
 **NOTES**
 - This was an incredibly tricky task. Not that there was a huge amount of code, but from researching online, it appears that there were multiple ways to produce the same result. In the end, sticking with lecture notes / lab / video proved to be the most apropriate. Following the KISS analogy; "Keep it simple, stupid".
 - Once the correct regex pattern was found (which took some time), it worked perfect in VS Code, but when applied to .py and executed, the result was empty. This caused a LOT of head scratching. Eventually, the light-bulb lit and I realised that VS Code is not case sensitive, but Python is! (When I changed the get|post|head... to GET|POST|HEAD... it suddenly worked!
+- According to: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods - There are 9 HTTP request methods. In the log file provided, only 2 were used (GET & POST), however, as that cannot be taken for granted, it felt safer to include all 9 request methods in the search pattern.
 
 **REFERENCES**
 
