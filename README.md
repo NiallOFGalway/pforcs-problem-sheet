@@ -246,6 +246,10 @@ with open ('Week07-access.log', 'r') as file:
 4) Use re.findall (including your chosen pattern) - re.findall module is used to search for “all” occurrences that match a given pattern
 5) Print the result
 
+**NOTES**
+- This was an incredibly tricky task. Not that there was a huge amount of code, but from researching online, it appears that there were multiple ways to produce the same result. In the end, sticking with lecture notes / lab / video proved to be the most apropriate. Following the KISS analogy; "Keep it simple, stupid".
+- Once the correct regex pattern was found (which took some time), it worked perfect in VS Code, but when applied to .py and executed, the result was empty. This caused a LOT of head scratching. Eventually, the light-bulb lit and I realised that VS Code is not case sensitive, but Python is! (When I changed the get|post|head... to GET|POST|HEAD... it suddenly worked!
+
 **REFERENCES**
 
 https://realpython.com/regex-python/
