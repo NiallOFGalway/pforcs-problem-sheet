@@ -303,6 +303,17 @@ plt.savefig('Week08-PlotImage.png')
 '''
 ```
 
+1) Import Libraries
+- Numpy: "NumPy is a Python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices"
+- Matplotlib.pyplot "A collection of functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc."
+2) Define X (0,4)
+3) Define Y Values
+4) Plot the X / Y Values
+5) For easier reading, a line-style, line-width, colour and label are added
+6) Finally, show the plot on-screen
+
+**NOTE**
+In the Code above, there is a commented out section. If this code was used, the output would be a .png file rather then showing on-screen
 
 **REFERENCES**
 
