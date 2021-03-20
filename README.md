@@ -272,3 +272,48 @@ https://www.w3schools.com/python/ref_file_readlines.asp
 https://stackoverflow.com/questions/839994/extracting-a-url-in-python
 
 https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
+
+# WEEK08 - Week08-plottask.py
+*Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.*
+
+Code:
+```
+import numpy as np
+import matplotlib.pyplot as plt
+
+xpoints = np.array(range(0,4))
+
+fy = xpoints
+gy = xpoints * xpoints
+hy = xpoints * xpoints * xpoints
+
+plt.plot(fy, linestyle='solid', linewidth='3', color='blue', label='fy')
+plt.plot(gy, linestyle='solid', linewidth='3', color='green', label='gy')
+plt.plot(hy, linestyle='solid', linewidth='3', color='red', label='hy')
+
+plt.legend()
+plt.xlabel("X Axis")
+plt.ylabel("Y Axis")
+
+plt.show()
+
+'''
+plt.savefig('Week08-PlotImage.png')
+# The above code would save the output as a .png file
+'''
+```
+
+
+**REFERENCES**
+
+https://www.w3schools.com/python/matplotlib_pyplot.asp
+
+https://realpython.com/python-matplotlib-guide
+
+https://realpython.com/courses/python-histograms/
+
+Andrew Beatty Week 08 Tutorial
+
+https://matplotlib.org/2.0.2/users/pyplot_tutorial.html
+
+https://stackoverflow.com/questions/16992038/inline-labels-in-matplotlib
