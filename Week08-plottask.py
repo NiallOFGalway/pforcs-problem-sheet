@@ -1,13 +1,6 @@
 # Week08-plottask.py
 # Author: Niall O Flaherty
 # Write a program called plottask.py that displays a plot of the functions f(x)=x, g(x)=x2 and h(x)=x3 in the range [0, 4] on the one set of axes.
-# Reference: https://www.w3schools.com/python/matplotlib_pyplot.asp
-# Reference: https://realpython.com/python-matplotlib-guide
-# Reference: https://realpython.com/courses/python-histograms/
-# Reference: Andrew Beatty Week 08 Tutorial
-# Reference: https://matplotlib.org/2.0.2/users/pyplot_tutorial.html
-# Reference: https://stackoverflow.com/questions/16992038/inline-labels-in-matplotlib
-
 
 import numpy as np
 import matplotlib.pyplot as plt
