@@ -380,3 +380,26 @@ plt.xlabel("SSESSIONID")
 plt.ylabel("Data downloaded (bytes)")
 plt.show()
 ```
+
+1) Import Pandas / Import MatPlotLib
+2) Select file to read from
+3) Add column names
+4) Read the file into a dataframe
+5) Remove useless data (dashes) from the dataframe
+6) Remove [] from time to make it readable
+7) Change the type of the time column from object to dateTime
+8) Set 'time' column to be the index
+9) Use groupBy to get the sum of all the data downloaded by each SESSIONID
+10) Create a plot
+
+**REFERENCES**
+
+Andrew Beatty Week09 Lab
+
+https://www.tutorialspoint.com/python_pandas/python_pandas_groupby.htm
+
+https://realpython.com/pandas-groupby/
+
+https://dzone.com/articles/types-of-matplotlib-in-python#:~:text=Python%20provides%20different%20types%20of,plot%20for%20viewing%20the%20data.
+
+Week 08 Task
