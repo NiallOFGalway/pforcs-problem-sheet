@@ -12,3 +12,11 @@ Create a plot of this (type of your choice)
 # Reference:
 # Reference:
 # Reference:
+
+import pandas as pd 
+import re
+import matplotlib.pyplot as plot
+
+# File to read data from
+filename = "Week09-access.log"
+
