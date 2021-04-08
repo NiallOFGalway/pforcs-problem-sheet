@@ -329,3 +329,54 @@ Andrew Beatty Week 08 Tutorial
 https://matplotlib.org/2.0.2/users/pyplot_tutorial.html
 
 https://stackoverflow.com/questions/16992038/inline-labels-in-matplotlib
+
+# WEEK 09 - Week09.py
+*Find which SessionID downloaded the most data and plot same*
+
+Code:
+```
+import pandas as pd 
+import re
+import matplotlib.pyplot as plt
+
+filename = "Week09-access.log"
+
+colNames = ('ip',
+            'dash1',
+            'dash2',
+            'time',
+            'request',
+            'status code',
+            'size of response',
+            'referer',
+            'user agent',
+            'dunno'
+            )
+
+df = pd.read_csv(filename, sep=' ', header= None, names=colNames)
+
+df.drop(columns=['dash1', 'dash2'], inplace=True)
+
+df['time'] = df['time'].apply(lambda x: re.search('[\w:/]+', x).group())
+
+df['time'] = pd.to_datetime(df['time'], format='%d/%b/%Y:%H:%M:%S')
+
+df = df.set_index(['time'])
+
+def extract_sessionid(x):
+    wibble = re.search('(JSESSIONID=\S+)', x).group()
+    id = re.split('=', wibble)[1]
+    return id
+
+df['SESSIONID'] = df['request'].apply(extract_sessionid)
+
+print(df.groupby(by=['SESSIONID'])['size of response'].sum())
+
+plt.figure(figsize=(8, 8))
+plotdata = df.groupby(by=['SESSIONID'])[['size of response']].sum()
+plotdata['size of response'].plot(kind='bar')
+plt.title("Data downloaded by SessionID")
+plt.xlabel("SSESSIONID")
+plt.ylabel("Data downloaded (bytes)")
+plt.show()
+```
