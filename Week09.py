@@ -69,9 +69,11 @@ plt.figure(figsize=(8, 8))
 
 plotdata = df.groupby(by=['SESSIONID'])[['size of response']].sum()
 plotdata['size of response'].plot(kind='bar')
+
 # Set the plot labels
 plt.title("Data downloaded by SessionID")
 plt.xlabel("SSESSIONID")
 plt.ylabel("Data downloaded (bytes)")
+
 # Show the graph
 plt.show()
